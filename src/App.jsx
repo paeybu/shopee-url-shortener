@@ -34,12 +34,12 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex justify-center items-center">
-      <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full min-w-[500px]">
+    <div className="min-h-screen bg-gray-100 flex justify-center items-center px-4 sm:px-6 md:px-8">
+      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg">
         <h1 className="text-2xl font-semibold text-center mb-4">
           ย่อ URL Shopee
         </h1>
-        <p className="mb-4 text-sm">
+        <p className="mb-4 text-sm text-gray-600">
           URL Shopee มักจะมีความยาวมากกกกก เพราะใช้ชื่อสินค้ามาเป็น URL ลอง copy
           แล้วมาใส่ในช่องแล้วกดแปลง URL ดูสิ!
         </p>
@@ -62,7 +62,7 @@ function App() {
               <Tooltip>
                 <TooltipTrigger>
                   <div
-                    className="text-blue-500 underline"
+                    className="text-blue-500 underline cursor-pointer break-all"
                     onClick={() => navigator.clipboard.writeText(shortenedUrl)}
                   >
                     {shortenedUrl}
